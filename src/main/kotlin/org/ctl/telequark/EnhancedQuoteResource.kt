@@ -16,5 +16,7 @@ class EnhancedQuoteResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    fun hello() = "${qotmClient.getQuote().quote}"
+    fun hello(): String {
+        return "${qotmClient.getQuote().quote}"
+    }
 }
