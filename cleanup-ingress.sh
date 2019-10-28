@@ -1,0 +1,1 @@
+kubectl delete svc -n cesar telequark
